@@ -14,11 +14,11 @@
         }
 
         h1, h2, h3, h4, h5, h6 {
-            color: #76FF03;
+            color: #2C6B2F;
         }
 
         a {
-            color: #76FF03;
+            color: #2C6B2F;
             text-decoration: none;
         }
 
@@ -29,7 +29,7 @@
         details {
             margin: 10px;
             padding: 10px;
-            border: 1px solid #76FF03;
+            border: 1px solid #2C6B2F;
             border-radius: 5px;
         }
 
@@ -38,12 +38,12 @@
         }
 
         em {
-            color: #76FF03;
+            color: #2C6B2F;
             font-style: italic;
         }
 
         button {
-            background-color: #76FF03;
+            background-color: #2C6B2F;
             color: black;
             border: none;
             padding: 10px 20px;
@@ -54,27 +54,27 @@
         }
 
         button:hover {
-            background-color: #64DD17;
+            background-color: #1A4F1E;
         }
 
         img {
-            width: 100%;
+            width: 80%; /* Reduced image size */
             height: auto;
-            max-width: 1800px;
+            max-width: 1200px; /* Limiting max width */
         }
 
-        input[type="text"], textarea {
+        input[type="text"], input[type="password"], input[type="email"], input[type="date"], input[type="time"], input[type="file"], select, textarea {
             padding: 10px;
             width: 100%;
-            border: 2px solid #76FF03;
+            border: 2px solid #2C6B2F;
             background-color: #333;
             color: #E0E0E0;
             border-radius: 5px;
             font-size: 16px;
         }
 
-        input[type="text"]:focus, textarea:focus {
-            border-color: #64DD17;
+        input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="date"]:focus, input[type="time"]:focus, input[type="file"]:focus, select:focus, textarea:focus {
+            border-color: #1A4F1E;
             outline: none;
         }
 
@@ -94,20 +94,51 @@
         <h6>h6</h6>
     </details>
 
-    <a href="#">Link</a>
-    <p>p</p>
-    <p><a href="https://ru.wikipedia.org/wiki/%D0%AF%D0%B1%D0%BB%D0%BE%D0%BA%D0%BE"><em>href</em></a></p>
     <button>Яблоки</button>
     <img src="https://avatars.mds.yandex.net/i?id=1d1e5cafa7b9e6d832678a216c351a6f9f809000-8400759-images-thumbs&n=13" alt="Yabloki Image">
 
     <div>
-        <label for="textInput">Text Input</label>
-        <input type="text" id="textInput" name="textInput">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username">
     </div>
 
     <div>
-        <label for="textArea">Text Area</label>
-        <textarea id="textArea" name="textArea" rows="4" cols="50"></textarea>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+    </div>
+
+    <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+    </div>
+
+    <div>
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date">
+    </div>
+
+    <div>
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time">
+    </div>
+
+    <div>
+        <label for="file">Choose File</label>
+        <input type="file" id="file" name="file">
+    </div>
+
+    <div>
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="comment">Comment</label>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
     </div>
 
     <details>
@@ -128,3 +159,4 @@
     </details>
 </body>
 </html>
+
